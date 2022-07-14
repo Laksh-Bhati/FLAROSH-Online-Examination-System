@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./examStyle.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <a href="./index.html"><img src="./images/mainLogo.png"></a>
+            </div>
+            <div class="nav-links">
+
+                <ul>
+                    <i class="uil uil-user"></i>
+                    <li><a id="username" href="#"></a></li>
+
+                </ul>
+
+            </div>
+            <button id="logout-button" onclick="logout()">logout</button>
+        </nav>
+    </div>
+
+    <div class="question-container" style="margin-left: 30%; margin-top: 5%;">
+        <p id="question" style="padding-left: 5px"></p>
+
+        <div><input type="radio" name="options" value="1"><span id="opt1"></span></div><br>
+        <div><input type="radio" name="options" value="2"><span id="opt2"></span></div><br>
+        <div><input type="radio" name="options" value="3"><span id="opt3"></span></div><br>
+        <div><input type="radio" name="options" value="4"><span id="opt4"></span></div><br>
+        <div class="button-box" style="margin-left: 25%;">
+            <button id="next-question-button" onclick="submitAnswer()" style="float: center"><span>Submit
+                    Answer</span></button>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="./exam.js"></script>
+
+</html>

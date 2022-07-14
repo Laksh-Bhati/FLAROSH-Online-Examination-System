@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <a href="./index.html"><img src="./images/mainLogo.png"></a>
+            </div>
+            <div class="nav-links">
+                <b>
+                    <ul>
+                        <li><a href="./login.html" target="_self">Login / Signup</a></li>
+                        <li><a href="./about.html" target="_self">About</a></li>
+                        <li><a href="./ContactUs.html" target="_self">Contact</a></li>
+                    </ul>
+                </b>
+            </div>
+        </nav>
+    </div>
+    <center>
+        <br><br>
+    <div class="container">
+        <div class="form signup">
+            <span class="title">Registration</span>
+
+            <form action="#" id="sign-up-form">
+                <div class="input-field">
+                    <i class="uil uil-user"></i>
+                    <input type="text" id="user" placeholder="Name" required="">
+                    
+                </div>
+                <div class="input-field">
+                    <i class="uil uil-keyboard"></i>
+                    <input type="text" id="hall" maxlength="12" placeholder="Hall Ticket No." required="">
+                    
+                </div>
+                <div class="input-field">
+                    <i class="uil uil-graduation-cap"></i>
+                    <input type="text" id="univ" placeholder="University Name" required="">
+                    
+                </div>
+                <div class="input-field">
+                    <i class="uil uil-book-open"></i>
+                    <input type="text" id="course" placeholder="B.Tech / B.Sc / B.Com" required="">
+                    
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email" placeholder="Email" required="">
+                    <i class="uil uil-envelope icon"></i>
+                    
+                </div>
+                <div class="input-field">
+                    <input type="password" id="pass" class="password" placeholder="Create a password" required="">
+                    <i class="uil uil-lock icon"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="password" placeholder="Confirm a password" required="">
+                    <i class="uil uil-lock icon"></i>
+                    <i class="uil uil-eye-slash showHidePw"></i>
+                </div>
+
+                <div class="checkbox-text">
+                    <div class="checkbox-content">
+                        <input type="checkbox" id="sigCheck">
+                        <label for="sigCheck" class="text">Remember me</label>
+                    </div>
+
+                    <a href="#" class="text">Forgot password?</a>
+                </div>
+
+                <div class="input-field button">
+                    <input type="submit" value="Submit" onclick="createUser()">
+                </div>
+            </form>
+
+            <div class="login-signup">
+                <span class="text">Already a member?
+                    <a href="./login.html" class="text login-link" target="_self"> Login now</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>

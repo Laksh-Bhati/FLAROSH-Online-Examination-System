@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Exam</title>
+    <link rel="stylesheet" href="./chooseExamStyle.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <a href="./index.html"><img src="./images/mainLogo.png"></a>
+            </div>
+            <div class="nav-links">
+
+                <ul>
+                    <i class="uil uil-user"></i>
+                    <li><a id="username" href="#">Laksh Bhati</a></li>
+
+                </ul>
+
+            </div>
+            <button id="logout-button" onclick="logout()">logout</button>
+        </nav>
+    </div>
+    <br><br>
+    <h1 style="text-align: center; font-family: roboto,sans-serif;">Choose Subject</h1>
+
+    <!------------------====choose exam section=====-------------->
+
+    <br>
+    <div class="row" >
+        <div class="column2">
+            <div class="card">
+                <img src="./images/examLogo/cpp.png" alt="Principal" style="width:100%" onclick="selectSubject('cpp')">
+                <div class="container">
+                    <p class="title">C++</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column2">
+            <div class="card">
+                <img src="./images/examLogo/java.png" alt="HOD" style="width:100%" onclick="selectSubject('java')">
+                <div class="container">
+                    <p class="title">Java</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column2">
+            <div class="card">
+                <img src="./images/examLogo/dbms.png" alt="Guide" style="width:100%" onclick="selectSubject('DBMS')">
+                <div class="container">
+                    <p class="title">DBMS<span></span></p>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="chooseExam.js"></script>
+</html>

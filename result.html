@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./examStyle.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <a href="./index.html"><img src="./images/mainLogo.png"></a>
+            </div>
+            <div class="nav-links">
+
+                <ul>
+                    <i class="uil uil-user"></i>
+                    <li><a id="username" href="#">Shubham Sinha</a></li>
+
+                </ul>
+
+            </div>
+            <button id="logout-button" onclick="logout()">logout</button>
+        </nav>
+    </div>
+
+    <div style="text-align: center; font-family: roboto,sans-serif;">
+        <br><br><br><br>
+        <h1>RESULT</h1>
+        <h3 id="total-quest">Total number of questions : 30</h3>
+        <h3 id="correct-quest">Number of correct responses : 15</h3>
+        <h3 id="percentage">Percentage secured : 50% </h3>
+    </div>
+<script src="result.js"></script>
+</body>
+
+</html>
